@@ -1,11 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from "./App"
 
-const title = 'My Minimal React Webpack Babel Setup';
+// Test object spread
+let obj = {}
+let obj2 = {...obj}
+console.log(obj2)
+
+// Test dynamic load
+import("./foo").then(x => x.default).then(console.log)
+
+// Test trailing comma
+console.log(1, 2,)
 
 ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('app')
-);
+  <App/>,
+  document.getElementById("app")
+)
 
-module.hot.accept();
+module.hot.accept()
