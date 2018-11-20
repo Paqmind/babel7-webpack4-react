@@ -1,6 +1,8 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
+console.log("jest.config")
+
 module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -72,8 +74,8 @@ module.exports = {
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
-    // "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest.mock.js",
-    //  "\\.(css|less)$": "<rootDir>/jest.mock.js"
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/jest.mock.js",
+     "\\.(css|less)$": "<rootDir>/jest.mock.js"
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -111,7 +113,7 @@ module.exports = {
 
   // A list of paths to directories that Jest should use to search for files in
   roots: [
-    "src"
+    "client"
   ],
 
   // Allows you to use a custom runner instead of Jest's default test runner

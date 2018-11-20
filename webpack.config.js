@@ -13,7 +13,7 @@ module.exports = {
 
   target: "web",
 
-  entry: './src/index.js',
+  entry: './client/index.js',
 
   output: {
     // https://webpack.js.org/configuration/output/#output-path

@@ -1,10 +1,10 @@
 module.exports = function (api) {
-  console.log("!!!")
+  console.log("babel.config")
   api.cache(true)
 
   let presets = [
     "@babel/preset-env",
-    "@babel/preset-react"
+    "@babel/preset-react",
   ]
 
   let plugins = [
