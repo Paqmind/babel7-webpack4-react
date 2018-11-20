@@ -1,5 +1,6 @@
 module.exports = function (api) {
   console.log("babel.config")
+
   api.cache(true)
 
   let presets = [
